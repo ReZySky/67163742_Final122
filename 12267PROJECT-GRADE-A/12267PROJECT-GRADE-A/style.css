@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #fdfcfb;
+    color: #555;
+}
+
+header {
+    background-color: #a1887f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.banner-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.banner-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: auto;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(120, 100, 90, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(120, 100, 90, 0.7);
+}
+
+.hero {
+    background-color: #f0ebe3;
+    padding: 40px;
+    text-align: center;
+}
+
+.products {
+    padding: 30px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-buy {
+    background-color: #81c784;
+    color: white;
+}
+
+.btn-buy:hover {
+    background-color: #66bb6a;
+}
+
+.btn-detail {
+    background-color: #90caf9;
+    color: white;
+}
+
+.btn-detail:hover {
+    background-color: #64b5f6;
+}
+
+/* เพิ่มสไตล์สำหรับปุ่ม ดูสินค้าเพิ่มเติม */
+.view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-view-more {
+    background-color: #fbc02d; /* สีเหลืองสดใส */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-view-more:hover {
+    background-color: #f57f17;
+}
+
+
+footer {
+    background-color: #a1887f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
